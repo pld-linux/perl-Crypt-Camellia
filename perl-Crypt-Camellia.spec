@@ -8,12 +8,12 @@
 Summary:	Crypt::Camellia - Crypt::CBC-compliant block cipher
 Summary(pl):	Crypt::Camellia - szyfr blokowy kompatybilny z Crypt::CBC
 Name:		perl-Crypt-Camellia
-Version:	1.0.1
+Version:	1.0.2
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	55dc7f13e5aeb0a954b95769dbb1a1bd
+# Source0-md5:	ba2e8ffa62b22f0cc59c8c867318461a
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
