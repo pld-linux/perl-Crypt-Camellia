@@ -6,7 +6,7 @@
 %define		pdir	Crypt
 %define		pnam	Camellia
 Summary:	Crypt::Camellia - Crypt::CBC-compliant block cipher
-Summary(pl):	Crypt::Camellia - szyfr blokowy kompatybilny z Crypt::CBC
+Summary(pl.UTF-8):   Crypt::Camellia - szyfr blokowy kompatybilny z Crypt::CBC
 Name:		perl-Crypt-Camellia
 Version:	1.0.2
 Release:	1
@@ -24,10 +24,10 @@ NESSIE winner for 128-bit block ciphers. The default key length in
 this implementation is 128 bits. This module supports the Crypt::CBC
 interface.
 
-%description -l pl
-Camellia to 128-bitowy szyfr blokowy o zmiennej d≥ugo∂ci klucza. Jest
-zwyciÍzc± NESSIE dla 128-bitowych szyfrÛw blokowych. Domy∂lny rozmiar
-klucza w tej implementacji to 128 bitÛw. Modu≥ obs≥uguje interfejs
+%description -l pl.UTF-8
+Camellia to 128-bitowy szyfr blokowy o zmiennej d≈Çugo≈õci klucza. Jest
+zwyciƒôzcƒÖ NESSIE dla 128-bitowych szyfr√≥w blokowych. Domy≈õlny rozmiar
+klucza w tej implementacji to 128 bit√≥w. Modu≈Ç obs≈Çuguje interfejs
 Crypt::CBC.
 
 %prep
