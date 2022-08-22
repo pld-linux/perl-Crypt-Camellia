@@ -8,7 +8,7 @@ Summary:	Crypt::Camellia - Crypt::CBC-compliant block cipher
 Summary(pl.UTF-8):	Crypt::Camellia - szyfr blokowy kompatybilny z Crypt::CBC
 Name:		perl-Crypt-Camellia
 Version:	1.0.2
-Release:	16
+Release:	17
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
