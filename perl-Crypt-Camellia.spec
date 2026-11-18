@@ -7,15 +7,18 @@
 Summary:	Crypt::Camellia - Crypt::CBC-compliant block cipher
 Summary(pl.UTF-8):	Crypt::Camellia - szyfr blokowy kompatybilny z Crypt::CBC
 Name:		perl-Crypt-Camellia
-Version:	1.0.2
-Release:	21
+Version:	2.02
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ba2e8ffa62b22f0cc59c8c867318461a
+Source0:	https://www.cpan.org/authors/id/O/OY/OYAMA/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	47fd4ad377e5c4d45dbd29bf1e7d9f5c
 URL:		http://search.cpan.org/dist/Crypt-Camellia/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl-Crypt-CBC
+%endif
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -48,13 +51,6 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-cd examples
-install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-for f in * ; do
-	sed -e "s@#!/usr/local/bin/perl@#!/usr/bin/perl@" $f \
-		> $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/$f
-done
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -65,4 +61,3 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/auto/Crypt/Camellia
 %attr(755,root,root) %{perl_vendorarch}/auto/Crypt/Camellia/Camellia.so
 %{_mandir}/man3/*
-%attr(755,root,root) %{_examplesdir}/%{name}-%{version}
